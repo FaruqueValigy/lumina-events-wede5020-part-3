@@ -122,6 +122,10 @@ LuminaEvents/
 - Git
 - GitHub
 
+# Figma link
+
+- https://www.figma.com/design/f6Vi3k73DMxLxynuJKSeXV/Untitled?node-id=5-529&t=Jcxw6TZz2p20lpQ8-1
+
 ---
 
 # References
