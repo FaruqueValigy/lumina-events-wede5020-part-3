@@ -125,11 +125,6 @@ LuminaEvents/
 ---
 
 # References
-
-- Codecademy. 2021. *Learn HTML.*
-- Jen Simmons. 2020. *HTML Essential Training.*
-- Mr. Virk Media. 2019. *What is DOM? HTML DOM Diagram and Explanation.*
-- Richard Swearingen. 2020. *Validating Code with the W3C Validator.*
 - Simplilearn. 2020. *HTML In 10 Minutes | HTML Tutorial for Beginners.*
 - Steve Griffith - Prof3ssorSt3v3. 2018. *Whitespace in HTML.*
 - Tutorials Point (India) Ltd. 2018. *HTML5 – Basic Syntax.*
