@@ -94,9 +94,21 @@ LuminaEvents/
 │   └── script.js
 
 ├── images/
+│   └── README.md
+
+├── docs/
+│   └── ST10520864-task-1 WEDE5020.pdf
 
 └── README.md
 ```
+
+HTML pages remain at the project root so their existing relative links to the
+shared `css/`, `js/`, and `images/` folders continue to work. Coursework
+documentation is kept separately in `docs/`.
+
+The portfolio page currently expects `images/wedding.jpg`,
+`images/corporate.jpg`, and `images/birthday.jpg`. Add those image assets to
+the `images/` folder when they are available.
 
 ---
 
