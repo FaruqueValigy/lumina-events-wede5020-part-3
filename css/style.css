@@ -3,49 +3,38 @@
    Lumina Events
    ========================================= */
 
-* {
-    box-sizing: border-box;
+:root {
+    --purple: #6a1b9a;
+    --purple-dark: #4a126d;
+    --purple-soft: #f3eaf7;
+    --ink: #222222;
+    --muted: #666666;
+    --surface: #f7f7f7;
+    --border: #dddddd;
 }
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
 
 body {
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #222222;
+    color: var(--ink);
     line-height: 1.6;
 }
 
-h1,
-h2,
-h3 {
-    margin-top: 0;
-}
+h1, h2, h3 { margin-top: 0; line-height: 1.25; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+p { margin: 0 0 1rem; }
 
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-h3 {
-    font-size: 1.4rem;
-}
-
-p {
-    margin-bottom: 1rem;
-}
-
-a {
-    color: #6a1b9a;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+a { color: var(--purple); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; }
 
 img {
     max-width: 100%;
@@ -54,257 +43,353 @@ img {
 }
 
 main {
-    width: 90%;
-    max-width: 1200px;
+    width: min(90%, 1200px);
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 0 3rem;
+    flex: 1;
 }
-
-section {
-    margin-bottom: 2rem;
-}
-
-/* =========================================
-   HEADER AND NAVIGATION
-   ========================================= */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    background-color: #222222;
+    gap: 2rem;
+    padding: 1.25rem 5%;
+    background-color: var(--ink);
     color: #ffffff;
 }
 
 header h1 {
     margin: 0;
     font-size: 1.8rem;
+    white-space: nowrap;
 }
 
 nav ul {
     display: flex;
-    list-style: none;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.65rem 1.25rem;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-nav a {
+nav a { color: #ffffff; font-weight: bold; }
+nav a:hover, nav a:focus-visible {
+    color: #d7a9eb;
+    text-decoration: none;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid var(--border);
+}
+
+footer {
+    padding: 1.25rem 5%;
+    background-color: var(--ink);
     color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    text-align: center;
 }
 
-nav a:hover {
-    color: #6a1b9a;
-    text-decoration: none;
-}
+footer p { margin: 0; }
 
 /* =========================================
    HOMEPAGE
    ========================================= */
 
-/* Hero Section */
+#hero, #cta {
+    border-radius: 8px;
+    background-color: var(--purple-soft);
+    text-align: center;
+}
 
 #hero {
-    text-align: center;
-    padding: 5rem 2rem;
-    background-color: #f3eaf7;
-    border-radius: 8px;
     margin-bottom: 3rem;
+    padding: 5rem 2rem;
 }
 
-#hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
+#hero h2 { margin-bottom: 1rem; font-size: 2.5rem; }
 
-#hero p {
+#hero p, #about-preview p {
     max-width: 700px;
-    margin: 0 auto 2rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-#hero a,
-#cta a {
+#hero p { margin-bottom: 2rem; }
+
+#hero a, #cta a {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background-color: #6a1b9a;
-    color: #ffffff;
     border-radius: 5px;
+    background-color: var(--purple);
+    color: #ffffff;
     font-weight: bold;
 }
 
-#hero a:hover,
-#cta a:hover {
-    background-color: #4a126d;
+#hero a:hover, #cta a:hover, form button:hover {
+    background-color: var(--purple-dark);
     text-decoration: none;
 }
 
-
-/* About Preview */
-
-#about-preview {
-    text-align: center;
+#about-preview, #services-preview, #why-us, #portfolio-preview, #testimonials {
     margin-bottom: 3rem;
 }
 
-#about-preview p {
-    max-width: 800px;
-    margin: 0 auto 1.5rem;
-}
+#about-preview, #testimonials { text-align: center; }
 
-
-/* Services Preview */
-
-#services-preview {
-    margin-bottom: 3rem;
-}
-
-#services-preview > h2 {
+#services-preview > h2, #portfolio-preview > h2, #why-us h2 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-#services-preview article {
+#services-preview article, #portfolio-preview article {
     display: inline-block;
-    vertical-align: top;
     width: 30%;
     margin: 1%;
     padding: 1.5rem;
-    background-color: #f7f7f7;
-    border: 1px solid #dddddd;
+    vertical-align: top;
+    border: 1px solid var(--border);
     border-radius: 8px;
+    background-color: var(--surface);
 }
 
-#services-preview article h3 {
-    color: #6a1b9a;
-}
-
-
-/* Why Choose Us */
+#services-preview article h3, #portfolio-preview article h3 { color: var(--purple); }
 
 #why-us {
-    margin-bottom: 3rem;
     padding: 2rem;
-    background-color: #f7f7f7;
     border-radius: 8px;
+    background-color: var(--surface);
 }
 
-#why-us h2 {
-    text-align: center;
-}
-
-#why-us ul {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
-/* Portfolio Preview */
-
-#portfolio-preview {
-    margin-bottom: 3rem;
-}
-
-#portfolio-preview > h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-#portfolio-preview article {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin: 1%;
-    padding: 1.5rem;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-}
-
-#portfolio-preview article h3 {
-    color: #6a1b9a;
-}
-
-
-/* Testimonials */
-
-#testimonials {
-    margin-bottom: 3rem;
-    text-align: center;
-}
+#why-us ul { max-width: 600px; margin: 0 auto; }
 
 #testimonials blockquote {
     max-width: 700px;
     margin: 1rem auto;
     padding: 1.5rem;
-    background-color: #f7f7f7;
-    border-left: 4px solid #6a1b9a;
+    border-left: 4px solid var(--purple);
+    background-color: var(--surface);
 }
 
-
-/* Call To Action */
-
-#cta {
-    text-align: center;
-    padding: 3rem 2rem;
-    background-color: #f3eaf7;
-    border-radius: 8px;
-}
-
-#cta p {
-    margin-bottom: 2rem;
-}
+#cta { padding: 3rem 2rem; }
+#cta p { margin-bottom: 2rem; }
 
 /* =========================================
    ABOUT PAGE
    ========================================= */
 
-main > section {
-    margin-bottom: 3rem;
+.about-page main > section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--surface);
 }
 
-main > section h2 {
-    color: #6a1b9a;
-    margin-bottom: 1rem;
-}
+.about-page main h2, .contact-page main h2, .booking-page main h2,
+.portfolio-page main h2, .services-page main > h2 { color: var(--purple); }
 
-main > section h3 {
-    margin-top: 2rem;
-    color: #4a126d;
-}
-
-main > section p {
-    max-width: 850px;
-}
+.about-page main h3 { color: var(--purple-dark); }
 
 /* =========================================
    SERVICES PAGE
    ========================================= */
 
-main > h2 {
+.services-page main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.services-page main > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
     text-align: center;
-    color: #6a1b9a;
-    margin-bottom: 2rem;
 }
 
-main > section {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin: 1%;
+.services-page main > section {
     padding: 1.5rem;
-    background-color: #f7f7f7;
-    border: 1px solid #dddddd;
+    border: 1px solid var(--border);
     border-radius: 8px;
+    background-color: var(--surface);
 }
 
-main > section h3 {
-    color: #6a1b9a;
+.services-page main > section h3 {
     margin-bottom: 0.75rem;
+    color: var(--purple);
 }
 
-main > section p {
-    margin-bottom: 0;
+.services-page main > section p { margin-bottom: 0; }
+
+/* =========================================
+   PORTFOLIO PAGE
+   ========================================= */
+
+.portfolio-page main > section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.portfolio-page main > section > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.portfolio-page figure {
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--surface);
+}
+
+.portfolio-page figure img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 5px;
+    background-color: #eeeeee;
+}
+
+.portfolio-page figcaption {
+    padding-top: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+/* =========================================
+   BOOKING PAGE
+   ========================================= */
+
+.booking-page main > section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booking-page main > section > h2, .booking-page main > section > p {
+    text-align: center;
+}
+
+.booking-page main > section > p { margin-bottom: 2rem; }
+
+form {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--surface);
+}
+
+fieldset {
+    margin: 0 0 2rem;
+    padding: 1.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+form label { font-weight: bold; }
+
+form input, form select, form textarea {
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+form textarea { resize: vertical; }
+
+form button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--purple);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+
+.contact-page main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.contact-page main > section {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--surface);
+}
+
+.contact-page main ul { padding-left: 1.25rem; }
+
+/* =========================================
+   RESPONSIVE LAYOUT
+   ========================================= */
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul { justify-content: flex-start; }
+
+    .services-page main, .portfolio-page main > section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #services-preview article, #portfolio-preview article { width: 46%; }
+}
+
+@media (max-width: 560px) {
+    header { padding: 1rem 5%; }
+    header h1 { font-size: 1.6rem; }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem 1rem;
+    }
+
+    main { width: min(92%, 1200px); padding-top: 1.5rem; }
+    #hero { padding: 3rem 1.25rem; }
+    #hero h2 { font-size: 2rem; }
+
+    #services-preview article, #portfolio-preview article,
+    .services-page main, .portfolio-page main > section,
+    .contact-page main { display: block; }
+
+    #services-preview article, #portfolio-preview article,
+    .services-page main > section, .portfolio-page figure,
+    .contact-page main > section {
+        width: 100%;
+        margin: 0 0 1rem;
+    }
+
+    .about-page main > section, .booking-page form,
+    .contact-page main > section { padding: 1.25rem; }
+
+    fieldset { padding: 1rem; }
 }

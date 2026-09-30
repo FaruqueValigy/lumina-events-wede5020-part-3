@@ -2,19 +2,17 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Your Event | Lumina Events</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="booking-page">
 
 <header>
 
-    <div class="logo">
-        <h1>Lumina Events</h1>
-    </div>
+    <h1>Lumina Events</h1>
 
     <nav>
         <ul>
@@ -29,13 +27,82 @@
 
 </header>
 
+<hr>
+
 <main>
 
-    <h2>Plan Your Event</h2>
+    <section>
 
-    <p>Please complete our booking form to start planning your event.</p>
+        <h2>Plan Your Event</h2>
+
+        <p>
+            Complete the booking form below and our team will contact you.
+        </p>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Event Details</legend>
+
+                <label for="event">Event Type:</label><br>
+
+                <select id="event" name="event">
+
+                    <option>Wedding</option>
+                    <option>Birthday</option>
+                    <option>Corporate Event</option>
+                    <option>Baby Shower</option>
+                    <option>Graduation</option>
+
+                </select>
+
+                <br><br>
+
+                <label for="date">Event Date:</label><br>
+
+                <input type="date" id="date" name="date">
+
+                <br><br>
+
+                <label for="guests">Number of Guests:</label><br>
+
+                <input type="number" id="guests" name="guests">
+
+                <br><br>
+
+                <label for="message">Special Requests</label><br>
+
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit Booking Request</button>
+
+        </form>
+
+    </section>
 
 </main>
+
+<hr>
 
 <footer>
 
@@ -46,4 +113,5 @@
 <script src="js/script.js"></script>
 
 </body>
+
 </html>
