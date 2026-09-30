@@ -101,3 +101,158 @@ nav a:hover {
     color: #6a1b9a;
     text-decoration: none;
 }
+
+/* =========================================
+   HOMEPAGE
+   ========================================= */
+
+/* Hero Section */
+
+#hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #f3eaf7;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+#hero a,
+#cta a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #6a1b9a;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#hero a:hover,
+#cta a:hover {
+    background-color: #4a126d;
+    text-decoration: none;
+}
+
+
+/* About Preview */
+
+#about-preview {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#about-preview p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+}
+
+
+/* Services Preview */
+
+#services-preview {
+    margin-bottom: 3rem;
+}
+
+#services-preview > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#services-preview article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1%;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+#services-preview article h3 {
+    color: #6a1b9a;
+}
+
+
+/* Why Choose Us */
+
+#why-us {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+#why-us h2 {
+    text-align: center;
+}
+
+#why-us ul {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Portfolio Preview */
+
+#portfolio-preview {
+    margin-bottom: 3rem;
+}
+
+#portfolio-preview > h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#portfolio-preview article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1%;
+    padding: 1.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+#portfolio-preview article h3 {
+    color: #6a1b9a;
+}
+
+
+/* Testimonials */
+
+#testimonials {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#testimonials blockquote {
+    max-width: 700px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    border-left: 4px solid #6a1b9a;
+}
+
+
+/* Call To Action */
+
+#cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f3eaf7;
+    border-radius: 8px;
+}
+
+#cta p {
+    margin-bottom: 2rem;
+}
