@@ -256,3 +256,25 @@ nav a:hover {
 #cta p {
     margin-bottom: 2rem;
 }
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+main > section {
+    margin-bottom: 3rem;
+}
+
+main > section h2 {
+    color: #6a1b9a;
+    margin-bottom: 1rem;
+}
+
+main > section h3 {
+    margin-top: 2rem;
+    color: #4a126d;
+}
+
+main > section p {
+    max-width: 850px;
+}
