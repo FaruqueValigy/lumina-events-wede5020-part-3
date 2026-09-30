@@ -283,21 +283,28 @@ main > section p {
    SERVICES PAGE
    ========================================= */
 
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+main > h2 {
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 2rem;
 }
 
-.service-card {
-    flex: 1 1 250px;
+main > section {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1%;
     padding: 1.5rem;
     background-color: #f7f7f7;
     border: 1px solid #dddddd;
     border-radius: 8px;
 }
 
-.service-card h3 {
+main > section h3 {
     color: #6a1b9a;
     margin-bottom: 0.75rem;
+}
+
+main > section p {
+    margin-bottom: 0;
 }
