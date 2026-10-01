@@ -43,23 +43,37 @@
             <h2>Our Portfolio</h2>
 
             <figure>
-                <img src="images/wedding.jpg" alt="Wedding Event">
+                <button class="gallery-item" type="button" data-gallery-item="images/wedding.svg" data-gallery-title="Luxury Wedding">
+                    <img src="images/wedding.svg" alt="Illustrated luxury wedding reception">
+                </button>
                 <figcaption>Luxury Wedding</figcaption>
             </figure>
 
             <figure>
-                <img src="images/corporate.jpg" alt="Corporate Event">
+                <button class="gallery-item" type="button" data-gallery-item="images/corporate.svg" data-gallery-title="Corporate Gala">
+                    <img src="images/corporate.svg" alt="Illustrated corporate gala event">
+                </button>
                 <figcaption>Corporate Gala</figcaption>
             </figure>
 
             <figure>
-                <img src="images/birthday.jpg" alt="Birthday Celebration">
+                <button class="gallery-item" type="button" data-gallery-item="images/birthday.svg" data-gallery-title="Birthday Celebration">
+                    <img src="images/birthday.svg" alt="Illustrated birthday celebration with balloons">
+                </button>
                 <figcaption>Birthday Celebration</figcaption>
             </figure>
 
         </section>
 
     </main>
+
+    <div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+        <div class="lightbox-content">
+            <button class="lightbox-close" type="button" aria-label="Close image preview">&times;</button>
+            <img id="lightbox-image" src="" alt="">
+            <p class="lightbox-title" id="lightbox-title"></p>
+        </div>
+    </div>
 
     <hr>
 

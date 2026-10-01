@@ -30,7 +30,7 @@ The website aims to:
 # Website Features
 
 - Multi-page HTML5 website
-- Responsive website structure (to be completed in later parts)
+- Responsive website structure with desktop and mobile layouts
 - Homepage
 - About page
 - Services page
@@ -52,7 +52,7 @@ The website aims to:
 | HTML Development | Complete |
 | Wireframe Design | In Progress |
 | CSS Development | Part 2 |
-| JavaScript Development | Part 3 |
+| JavaScript Development | Part 2 interaction and validation |
 
 ---
 
@@ -109,14 +109,16 @@ HTML pages remain at the project root so their existing relative links to the
 shared `css/`, `js/`, and `images/` folders continue to work. Coursework
 documentation is kept separately in `docs/`.
 
-The portfolio page currently expects `images/wedding.jpg`,
-`images/corporate.jpg`, and `images/birthday.jpg`. Add those image assets to
-the `images/` folder when they are available.
+The portfolio page uses three self-contained SVG illustrations in `images/`.
+They can be replaced with approved photographs later without changing the
+gallery interaction or accessibility text.
 
 Part 2 evidence is recorded in `docs/ST10520864-WEDE5020-Part-2-evidence.docx`,
 with the supporting matrix and testing log in the same `docs/` folder. The
-official Part 2 rubric/template still needs to be added before the evidence can
-be mapped to its exact terminology and marking structure.
+official Part 2 rubric/template was not included in the supplied project, so
+the evidence matrix records verified implementation against the Part 1
+proposal and identifies anything that still needs lecturer-provided marking
+terminology.
 
 ---
 
