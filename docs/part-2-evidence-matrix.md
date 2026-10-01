@@ -7,7 +7,7 @@ This record uses the supplied Part 1 proposal and the inspected project as its e
 | Six-page HTML structure | DONE | `index.html`, `about.html`, `services.html`, `gallery.html`, `booking.html`, `contact.html` | All six pages are present and load locally. |
 | Internal navigation | DONE | Shared navigation on all six pages; 36 tested primary targets | All tested targets returned HTTP 200. |
 | CSS styling | DONE | `css/style.css`; shared stylesheet loaded on all six pages | Responsive media queries are present at 800px and 560px. |
-| Responsive layout | DONE | `css/style.css` media queries; mobile browser checks | Layout was checked at desktop, tablet and narrow mobile widths. |
+| Responsive layout | DONE | `css/style.css` media queries; desktop baseline and narrow mobile browser check | Breakpoint rules cover tablet/mobile widths; narrow mobile rendering was verified live. |
 | Booking enquiry form | DONE | `booking.html` | Required full name and email fields plus event details are labelled. |
 | Booking form validation | EVIDENCE | Native browser validation test | Empty required fields and invalid email are detected; no server submission exists. |
 | JavaScript functionality | DONE | `js/script.js`; booking form and gallery interaction | Client-side valid-submit feedback and accessible gallery lightbox are implemented and tested. |
