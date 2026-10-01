@@ -97,7 +97,10 @@ LuminaEvents/
 │   └── README.md
 
 ├── docs/
-│   └── ST10520864-task-1 WEDE5020.pdf
+│   ├── ST10520864-task-1 WEDE5020.pdf
+│   ├── ST10520864-WEDE5020-Part-2-evidence.docx
+│   ├── part-2-evidence-matrix.md
+│   └── part-2-testing-log.md
 
 └── README.md
 ```
@@ -109,6 +112,11 @@ documentation is kept separately in `docs/`.
 The portfolio page currently expects `images/wedding.jpg`,
 `images/corporate.jpg`, and `images/birthday.jpg`. Add those image assets to
 the `images/` folder when they are available.
+
+Part 2 evidence is recorded in `docs/ST10520864-WEDE5020-Part-2-evidence.docx`,
+with the supporting matrix and testing log in the same `docs/` folder. The
+official Part 2 rubric/template still needs to be added before the evidence can
+be mapped to its exact terminology and marking structure.
 
 ---
 
