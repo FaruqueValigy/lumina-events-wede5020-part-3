@@ -42,8 +42,8 @@ self-contained SVG assets do not have alternate raster sizes; the responsive
 
 ## Remaining limitation
 
-No lecturer-marked Part 1 feedback sheet was included in the supplied materials.
-The README and evidence matrix document this limitation instead of attributing
-unverified comments to the lecturer. If the lecturer feedback is later
-provided, it should be added to the feedback section and changelog before
-submission.
+No narrative lecturer-marked Part 1 feedback sheet was included in the supplied
+materials. The only available rubric note was “Images folder?”; the README and
+evidence matrix record that note without attributing unverified comments to the
+lecturer. If fuller lecturer feedback is later provided, it should be added to
+the feedback section and changelog before submission.

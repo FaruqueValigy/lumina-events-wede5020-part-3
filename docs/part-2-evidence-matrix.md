@@ -2,7 +2,7 @@
 
 Audit date: 5 October 2026
 Authority: supplied **WEDE5020 POE Part 2 — Submission & Marking Checklist**
-Repository state audited: `689accd` on `origin/main` before this audit
+Repository state audited: `86cb110` on `origin/main`
 
 Status meanings: **DONE** = implemented and evidenced; **GAP** = not yet evidenced or incomplete; **FIX** = change made during this audit.
 
@@ -10,7 +10,7 @@ Status meanings: **DONE** = implemented and evidenced; **GAP** = not yet evidenc
 
 | Checklist item | Status | Evidence | Gap / fix |
 |---|---|---|---|
-| Review class/lecturer feedback | GAP | No lecturer-marked feedback sheet is present in the repository or supplied conversation | This limitation is recorded; no feedback is invented. User must supply the actual feedback if it must be quoted. |
+| Review class/lecturer feedback | GAP | No narrative lecturer-marked feedback sheet is present; the only available rubric note is “Images folder?” | The note is recorded without inventing additional feedback. |
 | Correct Part 1 HTML issues | DONE | Six semantic pages, shared navigation, labelled form controls, descriptive image alt text; `git log` shows staged development | Corrections are described only as repository-evidenced improvements. |
 | Record corrections in README changelog | DONE / FIX | `README.md` Part 1 section and dated Part 2 changelog | Added explicit feedback limitation and evidence boundary. |
 
@@ -50,7 +50,7 @@ Status meanings: **DONE** = implemented and evidenced; **GAP** = not yet evidenc
 |---|---|---|---|
 | Desktop screenshot | DONE / FIX | `docs/screenshots/desktop.png`, linked from README | Captured from local HTTP site at 1440×900. |
 | Tablet screenshot | DONE / FIX | `docs/screenshots/tablet.png`, linked from README | Captured at 768×900. |
-| Mobile screenshot | DONE / FIX | `docs/screenshots/mobile.png`, linked from README | Captured at 390×844. |
+| Mobile screenshot | DONE / FIX | `docs/screenshots/mobile.png`, linked from README | Captured at 480×844. |
 | Browser developer-tool style testing | DONE | `docs/part-2-testing-log.md` | Viewport, console, form, navigation, asset and interaction checks recorded. |
 | Relative units | DONE | `css/style.css` uses `rem`, `%`, `min()`, `vw` and `aspect-ratio` | No fixed-pixel text sizing used for the responsive scale. |
 | Responsive image technique | DONE | Shared image rule and gallery aspect-ratio/object-fit | `srcset`/`picture` was not necessary for the small local SVG set; this is documented. |
@@ -59,6 +59,7 @@ Status meanings: **DONE** = implemented and evidenced; **GAP** = not yet evidenc
 ## Overall result
 
 The implementation covers every assessable checklist area except the portion
-that depends on lecturer-marked Part 1 feedback, which was not supplied. The
-project records that boundary honestly and identifies the remaining user action:
-attach the official feedback if a feedback-specific claim is required.
+that depends on narrative lecturer-marked Part 1 feedback, which was not
+supplied. The project records the available “Images folder?” note honestly and
+identifies the remaining user action: attach the official feedback if a
+feedback-specific claim is required.

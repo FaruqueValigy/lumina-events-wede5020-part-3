@@ -29,7 +29,7 @@ Part 2 extends the semantic HTML foundation from Part 1 with:
 
 ## Part 1 feedback and corrections
 
-No lecturer-marked Part 1 feedback sheet was supplied with the project, so no feedback has been invented or attributed to the lecturer. The Part 2 record instead identifies the limitation and documents only changes evidenced by the repository and the Part 1 project structure: the existing six-page navigation was retained, shared styling was applied consistently, the form and gallery were made usable, and responsive behaviour and link/asset checks were added. See the detailed history in [docs/part-2-evidence-matrix.md](docs/part-2-evidence-matrix.md) and [docs/part-2-testing-log.md](docs/part-2-testing-log.md).
+No narrative lecturer feedback sheet was supplied with the project. The only available rubric note was **“Images folder?”**; it is recorded here without inventing additional lecturer comments. The repository now includes an `images/` folder with the three local SVG gallery assets and an `images/README.md` attribution note. The Part 2 record also documents only changes evidenced by the repository and the Part 1 project structure: the existing six-page navigation was retained, shared styling was applied consistently, the form and gallery were made usable, and responsive behaviour and link/asset checks were added. See the detailed history in [docs/part-2-evidence-matrix.md](docs/part-2-evidence-matrix.md) and [docs/part-2-testing-log.md](docs/part-2-testing-log.md).
 
 ## Responsive screenshots
 
@@ -90,6 +90,7 @@ Lumina/
 - Aligned responsive evidence to desktop/tablet/mobile breakpoints at 64rem, 48rem and 30rem, including small-screen typography and navigation spacing.
 - Captured and linked desktop, tablet and mobile screenshots in this README.
 - Updated the evidence matrix and testing log with the checklist structure, browser checks and the limitation that lecturer feedback was not supplied.
+- Recorded the available Part 1 rubric note, “Images folder?”, without attributing unsupported narrative feedback.
 
 ### Part 2 development — September–October 2026
 
