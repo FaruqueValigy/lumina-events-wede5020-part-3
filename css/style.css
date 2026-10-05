@@ -12,7 +12,11 @@
     --surface: #f7f7f7;
     --border: #dddddd;
 }
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html { scroll-behavior: smooth; }
 
@@ -21,20 +25,34 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     background-color: #ffffff;
     color: var(--ink);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
-h1, h2, h3 { margin-top: 0; line-height: 1.25; }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
 h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+h1, h2, h3, h4, h5, h6, p { overflow-wrap: anywhere; }
 p { margin: 0 0 1rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
+button, input, select, textarea { font: inherit; }
 
 a { color: var(--purple); text-decoration: none; }
-a:hover, a:focus-visible { text-decoration: underline; }
+a:hover, a:focus, a:focus-visible { text-decoration: underline; }
+a:active { color: var(--purple-dark); }
 
 img {
     max-width: 100%;
@@ -44,6 +62,7 @@ img {
 
 main {
     width: min(90%, 1200px);
+    min-width: 0;
     margin: 0 auto;
     padding: 2rem 0 3rem;
     flex: 1;
@@ -57,6 +76,7 @@ header {
     padding: 1.25rem 5%;
     background-color: var(--ink);
     color: #ffffff;
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 18%);
 }
 
 header h1 {
@@ -76,10 +96,11 @@ nav ul {
 }
 
 nav a { color: #ffffff; font-weight: bold; }
-nav a:hover, nav a:focus-visible {
+nav a:hover, nav a:focus, nav a:focus-visible {
     color: #d7a9eb;
     text-decoration: none;
 }
+nav a:active { color: #f0cfff; }
 
 hr {
     width: 90%;
@@ -156,6 +177,7 @@ footer p { margin: 0; }
     border: 1px solid var(--border);
     border-radius: 8px;
     background-color: var(--surface);
+    box-shadow: 0 0.35rem 1rem rgb(34 34 34 / 8%);
 }
 
 #services-preview article h3, #portfolio-preview article h3 { color: var(--purple); }
@@ -218,6 +240,7 @@ footer p { margin: 0; }
     border: 1px solid var(--border);
     border-radius: 8px;
     background-color: var(--surface);
+    box-shadow: 0 0.35rem 1rem rgb(34 34 34 / 8%);
 }
 
 .services-page main > section h3 {
@@ -248,6 +271,7 @@ footer p { margin: 0; }
     border: 1px solid var(--border);
     border-radius: 8px;
     background-color: var(--surface);
+    box-shadow: 0 0.35rem 1rem rgb(34 34 34 / 8%);
 }
 
 .gallery-item {
@@ -263,6 +287,8 @@ footer p { margin: 0; }
     outline: 3px solid var(--purple);
     outline-offset: 4px;
 }
+.gallery-item:hover img { transform: scale(1.02); }
+.gallery-item:active img { transform: scale(0.99); }
 
 .portfolio-page figure img {
     width: 100%;
@@ -299,6 +325,7 @@ form {
     border: 1px solid var(--border);
     border-radius: 8px;
     background-color: var(--surface);
+    box-shadow: 0 0.35rem 1rem rgb(34 34 34 / 8%);
 }
 
 fieldset {
@@ -326,6 +353,12 @@ form input, form select, form textarea {
     font: inherit;
 }
 
+form input:focus, form select:focus, form textarea:focus {
+    border-color: var(--purple);
+    outline: 3px solid rgb(106 27 154 / 22%);
+    outline-offset: 1px;
+}
+
 form textarea { resize: vertical; }
 
 form button {
@@ -339,6 +372,12 @@ form button {
     font-weight: bold;
     cursor: pointer;
 }
+
+form button:focus, form button:focus-visible {
+    outline: 3px solid #d7a9eb;
+    outline-offset: 3px;
+}
+form button:active { transform: translateY(1px); }
 
 .form-status {
     min-height: 1.6em;
@@ -368,6 +407,7 @@ form button {
     padding: 1rem;
     border-radius: 8px;
     background: #ffffff;
+    box-shadow: 0 0.5rem 2rem rgb(0 0 0 / 30%);
 }
 
 .lightbox img { width: 100%; }
@@ -414,7 +454,7 @@ form button {
    RESPONSIVE LAYOUT
    ========================================= */
 
-@media (max-width: 800px) {
+@media (max-width: 64rem) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -429,7 +469,7 @@ form button {
     #services-preview article, #portfolio-preview article { width: 46%; }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 48rem) {
     header { padding: 1rem 5%; }
     header h1 { font-size: 1.6rem; }
     nav ul {
@@ -457,4 +497,17 @@ form button {
     .contact-page main > section { padding: 1.25rem; }
 
     fieldset { padding: 1rem; }
+}
+
+@media (max-width: 30rem) {
+    body { font-size: 0.95rem; }
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.55rem; }
+    h3 { font-size: 1.25rem; }
+    #hero h2 { font-size: 1.8rem; }
+    nav ul { width: 100%; }
+    nav a { display: block; padding: 0.25rem 0; }
+    main { width: min(94%, 1200px); }
+    nav, main, main > section, #hero, #cta { width: 100%; max-width: 100%; }
+    #hero h2, #hero p { max-width: 100%; }
 }
