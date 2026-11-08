@@ -1,8 +1,8 @@
 (() => {
     'use strict';
 
-    const form = document.querySelector('#booking-form');
-    const status = document.querySelector('#form-status');
+    const form = document.querySelector('#booking-form, #enquiry-form, #contact-form');
+    const status = document.querySelector('#form-status, #enquiry-status, #contact-status');
 
     if (form && status) {
         form.addEventListener('submit', (event) => {
@@ -16,7 +16,16 @@
                 return;
             }
 
-            status.textContent = 'Thank you. Your enquiry is ready to be sent to Lumina Events.';
+            if (form.id === 'enquiry-form') {
+                const guests = Number(form.querySelector('[name="guests"]')?.value || 0);
+                const event = form.querySelector('[name="event"]')?.value || 'event';
+                const estimate = guests ? Math.max(2500, guests * 180) : 2500;
+                status.textContent = `Thank you. Your ${event.toLowerCase()} enquiry is ready. An indicative planning range starts at approximately R${estimate.toLocaleString('en-ZA')}.`;
+            } else if (form.id === 'contact-form') {
+                status.textContent = 'Your message is valid and ready to be sent to Lumina Events.';
+            } else {
+                status.textContent = 'Thank you. Your enquiry is ready to be sent to Lumina Events.';
+            }
             status.classList.add('success');
         });
     }

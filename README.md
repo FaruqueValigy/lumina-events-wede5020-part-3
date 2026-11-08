@@ -92,6 +92,8 @@ Lumina/
 - Added live portfolio search with result feedback and no-result handling.
 - Added live service search using data attributes and DOM filtering.
 - Extended the JavaScript interaction layer with reusable filtering logic and accessible status messages.
+- Added a dedicated `enquiry.html` form with event-specific fields, client-side validation and an indicative cost response.
+- Added a general contact form with validation feedback and a Johannesburg OpenStreetMap embed.
 
 ### Part 2 finalisation — 5 October 2026
 

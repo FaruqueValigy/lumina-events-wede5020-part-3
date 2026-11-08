@@ -24,7 +24,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Portfolio</a></li>
-            <li><a href="booking.html">Plan Your Event</a></li>
+            <li><a href="enquiry.html">Plan Your Event</a></li>
             <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -47,6 +47,30 @@
 
 <p>Address: 123 Event Street, Johannesburg, South Africa</p>
 
+</section>
+
+<section>
+<h2>Send a General Message</h2>
+<form id="contact-form" action="mailto:info@luminaevents.co.za" method="post" enctype="text/plain">
+    <label for="contact-name">Full name</label>
+    <input id="contact-name" name="name" type="text" autocomplete="name" required>
+    <label for="contact-email">Email address</label>
+    <input id="contact-email" name="email" type="email" autocomplete="email" required>
+    <label for="contact-type">Message type</label>
+    <select id="contact-type" name="messageType" required>
+        <option value="">Choose a message type</option>
+        <option>General question</option><option>Existing booking</option><option>Supplier enquiry</option>
+    </select>
+    <label for="contact-message">Message</label>
+    <textarea id="contact-message" name="message" rows="6" required></textarea>
+    <button type="submit">Prepare Email</button>
+    <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
+</form>
+</section>
+
+<section>
+<h2>Find Us</h2>
+<iframe class="map" title="Map showing Johannesburg" src="https://www.openstreetmap.org/export/embed.html?bbox=28.0%2C-26.3%2C28.2%2C-26.1&amp;layer=mapnik" loading="lazy"></iframe>
 </section>
 
 <section>

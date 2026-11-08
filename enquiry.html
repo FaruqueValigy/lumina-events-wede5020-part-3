@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Enquiry | Lumina Events</title>
+    <meta name="description" content="Send Lumina Events an enquiry for wedding, birthday, corporate and private event planning.">
+    <meta name="keywords" content="event enquiry, wedding quote, birthday quote, corporate event enquiry">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="booking-page">
+<header>
+    <h1>Lumina Events</h1>
+    <nav><ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="gallery.html">Portfolio</a></li>
+        <li><a href="enquiry.html" aria-current="page">Event Enquiry</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+</header>
+<main>
+    <section>
+        <h2>Event Enquiry</h2>
+        <p>Tell us about your event and receive an indicative planning response. A final quotation will be confirmed after consultation.</p>
+        <form id="enquiry-form" action="mailto:info@luminaevents.co.za" method="post" enctype="text/plain">
+            <fieldset><legend>Your details</legend>
+                <label for="enquiry-name">Full name</label><input id="enquiry-name" name="name" type="text" autocomplete="name" required>
+                <label for="enquiry-email">Email address</label><input id="enquiry-email" name="email" type="email" autocomplete="email" required>
+                <label for="enquiry-phone">Phone number</label><input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" required>
+            </fieldset>
+            <fieldset><legend>Event details</legend>
+                <label for="enquiry-event">Event type</label>
+                <select id="enquiry-event" name="event" required><option value="">Choose an event</option><option>Wedding</option><option>Birthday</option><option>Corporate Event</option><option>Baby Shower</option><option>Graduation</option></select>
+                <label for="enquiry-date">Preferred date</label><input id="enquiry-date" name="date" type="date" required>
+                <label for="enquiry-guests">Number of guests</label><input id="enquiry-guests" name="guests" type="number" min="1" max="5000" required>
+                <label for="enquiry-message">Requirements</label><textarea id="enquiry-message" name="message" rows="5" required></textarea>
+            </fieldset>
+            <button type="submit">Send Event Enquiry</button>
+            <p id="enquiry-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+<footer><p>&copy; 2026 Lumina Events. All Rights Reserved.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
