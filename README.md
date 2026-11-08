@@ -75,7 +75,7 @@ Lumina/
 - TutorialsPoint. 2018. *HTML5 – Basic Syntax.*
 - Xoaxdotnet. 2020. *HTML Lesson 27: Deprecated Elements.*
 - Yusuf Shakeel. 2017. *HTML | Block and Inline Elements.*
-- Gallery assets: original self-contained SVG illustrations created for this coursework and stored in `images/`; no external photographs, icons or fonts are embedded.
+- Gallery assets: locally stored event photographs are credited in `images/photo-credits.md`; the gallery labels them as illustrative examples rather than confirmed client work.
 - AI/tool use: ChatGPT/Codex assisted with rubric auditing, documentation wording and test planning. All project files and results were reviewed and verified against the local implementation before commit.
 
 ## Changelog
@@ -97,6 +97,13 @@ Lumina/
 - Added a custom `404.html` page for invalid routes.
 - Added Open Graph metadata and a keyboard-friendly FAQ accordion on the home page.
 - Replaced the portfolio placeholders with locally stored event photographs and added `images/photo-credits.md` with source and licence information.
+
+### Part 3 visual polish — 8 November 2026
+
+- Refined the shared visual system with a premium purple, cream and gold palette, stronger typography, rounded cards, depth, focus states and clearer navigation.
+- Added the credited event imagery to the homepage service and portfolio previews, the About page and the Services page while preserving the existing folder structure.
+- Improved the homepage hero, calls to action, service cards, portfolio cards, forms, map panel, lightbox and mobile layouts.
+- Refreshed all desktop, tablet and mobile evidence screenshots and updated the editable Portfolio of Evidence with the new screenshots.
 
 ## Part 3 evidence
 

@@ -524,3 +524,145 @@ form button:active { transform: translateY(1px); }
     nav, main, main > section, #hero, #cta { width: 100%; max-width: 100%; }
     #hero h2, #hero p { max-width: 100%; }
 }
+
+/* =========================================
+   LUMINA VISUAL POLISH
+   ========================================= */
+:root {
+    --purple: #7b3f8c;
+    --purple-dark: #452050;
+    --purple-soft: #f7eff8;
+    --ink: #241c2a;
+    --muted: #6f6574;
+    --surface: #fffdfb;
+    --border: #eadfeb;
+    --gold: #c7974d;
+    --shadow: 0 1rem 2.5rem rgb(69 32 80 / 10%);
+}
+
+body {
+    background: linear-gradient(180deg, #fff 0%, #fffafc 55%, #fff 100%);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink);
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: Georgia, "Times New Roman", serif; }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    min-height: 5.25rem;
+    padding: 1rem clamp(1.25rem, 5vw, 5rem);
+    background: rgb(36 28 42 / 94%);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgb(255 255 255 / 12%);
+}
+
+header h1 {
+    color: #fff8ef;
+    font-size: clamp(1.55rem, 2.5vw, 2rem);
+    letter-spacing: 0.04em;
+}
+
+header h1::before { content: "✦"; margin-right: 0.55rem; color: var(--gold); font-size: 0.8em; }
+nav a { padding: 0.5rem 0.75rem; border-radius: 999px; transition: color 180ms ease, background-color 180ms ease, transform 180ms ease; }
+nav a:hover, nav a:focus-visible { background: rgb(255 255 255 / 12%); color: #fff8ef; transform: translateY(-1px); }
+
+main { width: min(92%, 1180px); padding-top: clamp(2rem, 4vw, 4rem); }
+/* Content remains visible immediately for fast loading, assistive technology and evidence capture. */
+
+#hero {
+    position: relative;
+    min-height: 31rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding: clamp(3rem, 9vw, 7rem) 2rem;
+    color: #fff;
+    text-align: left;
+    background: linear-gradient(90deg, rgb(36 28 42 / 86%), rgb(69 32 80 / 58%)), url("../images/wedding-reception.jpg") center / cover;
+    box-shadow: var(--shadow);
+}
+#hero::after { content: ""; position: absolute; inset: auto 0 0; height: 0.35rem; background: linear-gradient(90deg, var(--gold), #f2d39d, var(--gold)); }
+.hero-content { width: min(100%, 720px); margin-right: auto; }
+.eyebrow { color: #f2d39d; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+#hero h2 { max-width: 650px; font-size: clamp(2.5rem, 6vw, 5.2rem); line-height: 1.02; }
+#hero p:not(.eyebrow) { max-width: 560px; color: #f8eefb; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+#hero a, #cta a, form button { border: 1px solid transparent; border-radius: 999px; background: var(--gold); box-shadow: 0 0.5rem 1rem rgb(36 28 42 / 18%); transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease; }
+#hero a:hover, #cta a:hover, form button:hover { background: #e0b86f; color: var(--ink); transform: translateY(-2px); box-shadow: 0 0.75rem 1.25rem rgb(36 28 42 / 20%); }
+
+#about-preview, #testimonials { padding: clamp(2rem, 4vw, 3.5rem); border-radius: 1.5rem; background: #fff; box-shadow: var(--shadow); }
+#about-preview h2, #services-preview > h2, #why-us h2, #portfolio-preview > h2, #testimonials h2, #faq h2 { color: var(--purple-dark); font-size: clamp(1.9rem, 3vw, 2.6rem); }
+#about-preview a, #services-preview > a, #portfolio-preview > a { display: inline-block; margin-top: 0.5rem; font-weight: 800; }
+
+#services-preview, #portfolio-preview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+#services-preview > h2, #portfolio-preview > h2 { grid-column: 1 / -1; margin-bottom: 0.25rem; }
+#services-preview article, #portfolio-preview article { display: block; width: auto; margin: 0; padding: 0 0 1.3rem; overflow: hidden; border: 1px solid var(--border); border-radius: 1.25rem; background: #fff; box-shadow: var(--shadow); transition: transform 180ms ease, box-shadow 180ms ease; }
+#services-preview article:hover, #portfolio-preview article:hover { transform: translateY(-5px); box-shadow: 0 1.25rem 3rem rgb(69 32 80 / 16%); }
+#services-preview article img, #portfolio-preview article img { width: 100%; height: 11rem; object-fit: cover; }
+#services-preview article h3, #services-preview article p, #portfolio-preview article h3, #portfolio-preview article p { margin-right: 1.3rem; margin-left: 1.3rem; }
+#services-preview article h3, #portfolio-preview article h3 { margin-top: 1.2rem; }
+
+#why-us { padding: clamp(2rem, 4vw, 3rem); border: 1px solid var(--border); border-radius: 1.5rem; background: linear-gradient(135deg, var(--purple-soft), #fff); box-shadow: var(--shadow); }
+#why-us li { margin: 0.7rem 0; padding-left: 0.4rem; }
+#why-us li::marker { color: var(--gold); }
+#testimonials blockquote { margin: 1rem auto; border-left-color: var(--gold); border-radius: 0 1rem 1rem 0; background: var(--purple-soft); color: var(--purple-dark); font-style: italic; }
+#cta { margin-top: 1rem; padding: clamp(2.5rem, 6vw, 4rem) 2rem; background: linear-gradient(135deg, var(--purple-dark), var(--purple)); color: #fff; box-shadow: var(--shadow); }
+#cta h2 { color: #fff; }
+#cta p { color: #f7eefa; }
+
+#faq { max-width: 900px; }
+#faq details { padding: 1.25rem 1.5rem; border-color: var(--border); border-radius: 1rem; background: #fff; box-shadow: 0 0.5rem 1.25rem rgb(69 32 80 / 6%); }
+#faq summary { color: var(--purple-dark); }
+
+.about-page main > section, .services-page main > section, .portfolio-page main > section, .contact-page main > section, .booking-page main > section { border-color: var(--border); border-radius: 1.25rem; background: #fff; box-shadow: var(--shadow); }
+.about-page main > section { max-width: 980px; padding: clamp(1.5rem, 4vw, 3rem); }
+.about-image { width: 100%; height: clamp(12rem, 30vw, 22rem); margin: 0 0 2rem; object-fit: cover; border-radius: 1rem; }
+.services-page main { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.services-page main > h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.services-page main > label, .services-page main > input { grid-column: 1 / -1; }
+.services-page main > input, .portfolio-page main input { margin: 0 0 1rem; padding: 0.9rem 1rem; border: 1px solid var(--border); border-radius: 999px; background: #fff; }
+.services-page main > section { padding: 0 0 1.5rem; overflow: hidden; transition: transform 180ms ease; }
+.services-page main > section:hover { transform: translateY(-4px); }
+.service-image { width: 100%; height: 10rem; margin-bottom: 1.25rem; object-fit: cover; }
+.services-page main > section h3, .services-page main > section p { margin-right: 1.5rem; margin-left: 1.5rem; }
+.services-page main > section h3 { color: var(--purple-dark); }
+
+.portfolio-page main > section { padding: clamp(1.5rem, 4vw, 3rem); }
+.portfolio-page main > section > h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.portfolio-page figure { padding: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 1rem; background: #fff; box-shadow: var(--shadow); }
+.portfolio-page figure img { aspect-ratio: 4 / 3; border-radius: 0; transition: transform 350ms ease, filter 350ms ease; }
+.gallery-item:hover img { transform: scale(1.06); filter: saturate(1.08); }
+.portfolio-page figcaption { padding: 1rem; color: var(--purple-dark); }
+
+.booking-page main > section { max-width: 900px; padding: clamp(1.5rem, 4vw, 3rem); }
+form { border: 0; background: linear-gradient(180deg, #fff, #fffafc); box-shadow: none; }
+fieldset { padding: 1.25rem; border-color: var(--border); border-radius: 1rem; }
+legend { color: var(--purple-dark); }
+form input, form select, form textarea { border-color: var(--border); border-radius: 0.75rem; background: #fff; }
+form button { padding: 0.9rem 1.6rem; }
+.contact-page main { align-items: start; }
+.contact-page main > section { padding: clamp(1.5rem, 4vw, 2.25rem); }
+.map { min-height: 24rem; border-radius: 1rem; box-shadow: inset 0 0 0 1px var(--border); }
+
+.lightbox { background: rgb(36 28 42 / 88%); backdrop-filter: blur(6px); }
+.lightbox-content { width: min(92vw, 820px); padding: 0.75rem; border-radius: 1.25rem; }
+.lightbox img { max-height: 75vh; object-fit: contain; border-radius: 0.75rem; }
+.lightbox-close { top: 0.75rem; right: 1rem; width: 2.3rem; height: 2.3rem; border-radius: 50%; background: rgb(255 255 255 / 88%); color: var(--purple-dark); }
+
+footer { margin-top: 2rem; padding: 2rem 5%; background: var(--ink); color: #eadfeb; }
+
+@media (max-width: 48rem) {
+    header { position: relative; }
+    #hero { min-height: 27rem; text-align: center; }
+    .hero-content { margin: 0 auto; }
+    #services-preview, #portfolio-preview, .services-page main { grid-template-columns: 1fr; }
+    #services-preview > h2, #portfolio-preview > h2 { margin-bottom: 0; }
+    #services-preview article, #portfolio-preview article { width: 100%; }
+    .services-page main > section { width: 100%; margin: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
