@@ -17,7 +17,7 @@ Test environment: local HTTP server at `http://localhost:8765`
 | P3-10 | Lightbox and search | Gallery modal and search/filter interactions work in the browser | Requires live manual interaction before submission |
 | P3-11 | Interactive map | Leaflet map loads with Johannesburg marker | Requires browser/network confirmation |
 | P3-12 | Deployment | Live site opens at final URL | NOT YET TESTED; hosting access blocked |
-| P3-13 | Email delivery | Enquiry/contact message reaches recipient | NOT VERIFIED; current forms use `mailto:` |
+| P3-13 | Email delivery | Enquiry/contact message opens a message to the student's email account | NOT VERIFIED; forms now target `mailto:st10520864@myemeris.edu.za`; manually test from the live site |
 
 ## Remaining evidence actions
 
