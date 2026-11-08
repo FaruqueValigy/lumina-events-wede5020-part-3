@@ -98,6 +98,10 @@ Lumina/
 - Added Open Graph metadata and a keyboard-friendly FAQ accordion on the home page.
 - Replaced the portfolio placeholders with locally stored event photographs and added `images/photo-credits.md` with source and licence information.
 
+## Part 3 evidence
+
+Local Part 3 screenshots and the testing record are stored in [docs/part-3-evidence](docs/part-3-evidence/). These document the current local implementation; deployment and live form delivery remain pending until hosting access is available.
+
 ### Part 2 finalisation — 5 October 2026
 
 - Audited the project against the supplied WEDE5020 Part 2 checklist.
