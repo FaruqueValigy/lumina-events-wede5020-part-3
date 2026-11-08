@@ -8,6 +8,7 @@
     <meta name="description" content="Contact Lumina Events about event planning, decor, bookings and celebration requirements.">
     <meta name="keywords" content="contact event planner, Lumina Events contact, event decor enquiry">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 
 <body class="contact-page">
@@ -70,7 +71,7 @@
 
 <section>
 <h2>Find Us</h2>
-<iframe class="map" title="Map showing Johannesburg" src="https://www.openstreetmap.org/export/embed.html?bbox=28.0%2C-26.3%2C28.2%2C-26.1&amp;layer=mapnik" loading="lazy"></iframe>
+<div id="event-map" class="map" role="application" aria-label="Interactive map showing Johannesburg"></div>
 </section>
 
 <section>
@@ -91,6 +92,7 @@
 
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="js/script.js"></script>
 
 </body>

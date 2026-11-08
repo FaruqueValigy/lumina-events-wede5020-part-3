@@ -93,7 +93,7 @@ Lumina/
 - Added live service search using data attributes and DOM filtering.
 - Extended the JavaScript interaction layer with reusable filtering logic and accessible status messages.
 - Added a dedicated `enquiry.html` form with event-specific fields, client-side validation and an indicative cost response.
-- Added a general contact form with validation feedback and a Johannesburg OpenStreetMap embed.
+- Added a general contact form with validation feedback and an interactive Leaflet/OpenStreetMap map centred on Johannesburg.
 - Added a custom `404.html` page for invalid routes.
 - Added Open Graph metadata and a keyboard-friendly FAQ accordion on the home page.
 - Replaced the portfolio placeholders with locally stored event photographs and added `images/photo-credits.md` with source and licence information.

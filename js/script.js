@@ -56,6 +56,16 @@
     filterCards(document.querySelector('#gallery-search'), [...document.querySelectorAll('[data-gallery-card]')], 'No portfolio items match that search.');
     filterCards(document.querySelector('#service-search'), [...document.querySelectorAll('[data-service-card]')], 'No services match that search.');
 
+    const mapElement = document.querySelector('#event-map');
+    if (mapElement && window.L) {
+        const map = L.map(mapElement).setView([-26.2041, 28.0473], 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 19
+        }).addTo(map);
+        L.marker([-26.2041, 28.0473]).addTo(map).bindPopup('<strong>Lumina Events</strong><br>Johannesburg, South Africa').openPopup();
+    }
+
     const lightbox = document.querySelector('#gallery-lightbox');
     const lightboxImage = document.querySelector('#lightbox-image');
     const lightboxTitle = document.querySelector('#lightbox-title');
