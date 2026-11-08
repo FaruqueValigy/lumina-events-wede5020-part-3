@@ -9,3 +9,5 @@ The portfolio photographs were downloaded for coursework use from Unsplash and s
 | `birthday-party.jpg` | Birthday dessert table and balloon decor | Alexander Mass, “Birthday party decorations with cake and balloons”, https://unsplash.com/photos/birthday-party-decorations-with-cake-and-balloons-YV8iEKnhzns, used under the Unsplash License |
 
 The original local SVG illustrations remain in this folder as earlier Part 2 assets. They are no longer the primary portfolio images, but they are preserved for project history.
+
+These photographs are illustrative reference images for the website coursework. They must not be presented as confirmed Lumina Events client work unless the student replaces them with original or client-authorised photographs.
