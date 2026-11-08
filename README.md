@@ -80,6 +80,12 @@ Lumina/
 
 ## Changelog
 
+### Part 3 SEO foundation — 8 November 2026
+
+- Added descriptive meta descriptions and page-specific keywords to the About, Services, Portfolio, Plan Your Event and Contact pages.
+- Added root-level `robots.txt` and `sitemap.xml` files for crawler guidance and site structure discovery.
+- The deployment hostname in these files is a provisional placeholder and must be replaced with the verified live URL after deployment.
+
 ### Part 2 finalisation — 5 October 2026
 
 - Audited the project against the supplied WEDE5020 Part 2 checklist.
