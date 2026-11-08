@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Lumina Events</title>
+    <meta name="description" content="Explore Lumina Events portfolio examples for weddings, corporate functions and birthday celebrations.">
+    <meta name="keywords" content="event decor portfolio, wedding decor gallery, corporate event styling">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,21 +44,25 @@
 
             <h2>Our Portfolio</h2>
 
-            <figure>
+            <label for="gallery-search">Search portfolio</label>
+            <input type="search" id="gallery-search" placeholder="Try wedding or corporate" aria-describedby="gallery-help">
+            <p id="gallery-help">Search by event type, then select an image to view it larger.</p>
+
+            <figure class="gallery-card" data-gallery-card data-gallery-search="wedding luxury decor">
                 <button class="gallery-item" type="button" data-gallery-item="images/wedding.svg" data-gallery-title="Luxury Wedding">
                     <img src="images/wedding.svg" alt="Illustrated luxury wedding reception">
                 </button>
                 <figcaption>Luxury Wedding</figcaption>
             </figure>
 
-            <figure>
+            <figure class="gallery-card" data-gallery-card data-gallery-search="corporate gala business">
                 <button class="gallery-item" type="button" data-gallery-item="images/corporate.svg" data-gallery-title="Corporate Gala">
                     <img src="images/corporate.svg" alt="Illustrated corporate gala event">
                 </button>
                 <figcaption>Corporate Gala</figcaption>
             </figure>
 
-            <figure>
+            <figure class="gallery-card" data-gallery-card data-gallery-search="birthday celebration party">
                 <button class="gallery-item" type="button" data-gallery-item="images/birthday.svg" data-gallery-title="Birthday Celebration">
                     <img src="images/birthday.svg" alt="Illustrated birthday celebration with balloons">
                 </button>

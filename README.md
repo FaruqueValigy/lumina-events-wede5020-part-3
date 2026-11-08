@@ -86,6 +86,13 @@ Lumina/
 - Added root-level `robots.txt` and `sitemap.xml` files for crawler guidance and site structure discovery.
 - The deployment hostname in these files is a provisional placeholder and must be replaced with the verified live URL after deployment.
 
+### Part 3 functionality — 8 November 2026
+
+- Restored the accessible portfolio lightbox using the existing local SVG assets.
+- Added live portfolio search with result feedback and no-result handling.
+- Added live service search using data attributes and DOM filtering.
+- Extended the JavaScript interaction layer with reusable filtering logic and accessible status messages.
+
 ### Part 2 finalisation — 5 October 2026
 
 - Audited the project against the supplied WEDE5020 Part 2 checklist.
