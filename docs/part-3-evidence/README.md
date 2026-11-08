@@ -13,6 +13,8 @@ These screenshots were captured from the local Part 3 website using the current 
 | `screenshots/desktop-enquiry.png` | 1440 x 900 | Event enquiry form |
 | `screenshots/desktop-contact.png` | 1440 x 900 | Contact form and map area |
 
+Additional tablet and mobile captures for the gallery, enquiry and contact pages are also included in the screenshots folder for assessor review.
+
 ## Evidence boundary
 
 The screenshots show the current local implementation. The final live URL, Netlify deployment, live form delivery and live 404 route remain to be verified after hosting access is resolved.
