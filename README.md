@@ -96,6 +96,7 @@ Lumina/
 - Added a general contact form with validation feedback and a Johannesburg OpenStreetMap embed.
 - Added a custom `404.html` page for invalid routes.
 - Added Open Graph metadata and a keyboard-friendly FAQ accordion on the home page.
+- Replaced the portfolio placeholders with locally stored event photographs and added `images/photo-credits.md` with source and licence information.
 
 ### Part 2 finalisation — 5 October 2026
 
