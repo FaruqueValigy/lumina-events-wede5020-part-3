@@ -208,6 +208,12 @@ footer p { margin: 0; }
 #cta { padding: 3rem 2rem; }
 #cta p { margin-bottom: 2rem; }
 
+#faq { max-width: 900px; margin: 0 auto 3rem; }
+#faq details { margin: 0.75rem 0; padding: 1rem 1.25rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); transition: background-color 180ms ease, transform 180ms ease; }
+#faq details[open] { background: var(--purple-soft); transform: translateY(-1px); }
+#faq summary { cursor: pointer; color: var(--purple-dark); font-weight: 700; }
+#faq summary:focus-visible { outline: 3px solid #d7a9eb; outline-offset: 4px; }
+
 /* =========================================
    ABOUT PAGE
    ========================================= */

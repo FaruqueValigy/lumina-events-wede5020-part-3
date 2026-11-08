@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wede5020-2026-part-3-faruquevaligy.netlify.app/sitemap.xml
+Sitemap: https://emgpsd.github.io/wede5020-2026-part-3-faruquevaligy/sitemap.xml
