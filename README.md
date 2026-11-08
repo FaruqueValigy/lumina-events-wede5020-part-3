@@ -84,7 +84,7 @@ Lumina/
 
 - Added descriptive meta descriptions and page-specific keywords to the About, Services, Portfolio, Plan Your Event and Contact pages.
 - Added root-level `robots.txt` and `sitemap.xml` files for crawler guidance and site structure discovery.
-- The deployment hostname in these files is a provisional placeholder and must be replaced with the verified live URL after deployment.
+- The verified live deployment is available at https://lumina-events-wede5020-part-3.netlify.app/.
 
 ### Part 3 functionality — 8 November 2026
 
@@ -107,7 +107,7 @@ Lumina/
 
 ## Part 3 evidence
 
-Local Part 3 screenshots and the testing record are stored in [docs/part-3-evidence](docs/part-3-evidence/). These document the current local implementation; deployment and live form delivery remain pending until hosting access is available.
+Local Part 3 screenshots and the testing record are stored in [docs/part-3-evidence](docs/part-3-evidence/). The verified live deployment is https://lumina-events-wede5020-part-3.netlify.app/; live form delivery still requires manual email confirmation.
 
 ### Part 2 finalisation — 5 October 2026
 

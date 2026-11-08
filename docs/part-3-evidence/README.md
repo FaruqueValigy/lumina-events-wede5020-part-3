@@ -17,4 +17,4 @@ Additional tablet and mobile captures for the gallery, enquiry and contact pages
 
 ## Evidence boundary
 
-The screenshots show the current local implementation. The final live URL, Netlify deployment, live form delivery and live 404 route remain to be verified after hosting access is resolved.
+The screenshots show the local implementation before deployment. The verified live URL is https://lumina-events-wede5020-part-3.netlify.app/. The live HTML routes, `robots.txt` and `sitemap.xml` returned successfully during final verification; email delivery still requires manual confirmation.
