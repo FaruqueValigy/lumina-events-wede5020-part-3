@@ -88,6 +88,7 @@ Lumina/
 
 ### Part 3 functionality — 8 November 2026
 
+- Refined the enquiry and contact forms with warmer, more conversational wording and connected valid submissions to the configured Lumina Events email address.
 - Restored the accessible portfolio lightbox using the existing local SVG assets.
 - Added live portfolio search with result feedback and no-result handling.
 - Added live service search using data attributes and DOM filtering.

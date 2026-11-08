@@ -51,7 +51,7 @@
 </section>
 
 <section>
-<h2>Send a General Message</h2>
+<h2>Send Us a Message</h2>
 <form id="contact-form" action="mailto:st10520864@myemeris.edu.za" method="post" enctype="text/plain">
     <label for="contact-name">Full name</label>
     <input id="contact-name" name="name" type="text" autocomplete="name" required>
@@ -59,12 +59,12 @@
     <input id="contact-email" name="email" type="email" autocomplete="email" required>
     <label for="contact-type">Message type</label>
     <select id="contact-type" name="messageType" required>
-        <option value="">Choose a message type</option>
+        <option value="">What can we help with?</option>
         <option>General question</option><option>Existing booking</option><option>Supplier enquiry</option>
     </select>
-    <label for="contact-message">Message</label>
-    <textarea id="contact-message" name="message" rows="6" required></textarea>
-    <button type="submit">Prepare Email</button>
+    <label for="contact-message">Your message</label>
+    <textarea id="contact-message" name="message" rows="6" placeholder="Write your message here and we will get back to you." required></textarea>
+    <button type="submit">Send Message</button>
     <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
 </form>
 </section>

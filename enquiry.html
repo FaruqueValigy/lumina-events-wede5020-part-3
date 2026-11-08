@@ -20,21 +20,21 @@
 <main>
     <section>
         <h2>Event Enquiry</h2>
-        <p>Tell us about your event and receive an indicative planning response. A final quotation will be confirmed after consultation.</p>
+        <p>Tell us what you are planning and we will come back to you with ideas, availability and a starting estimate. We will confirm the final quote after chatting through the details.</p>
         <form id="enquiry-form" action="mailto:st10520864@myemeris.edu.za" method="post" enctype="text/plain">
-            <fieldset><legend>Your details</legend>
+            <fieldset><legend>About you</legend>
                 <label for="enquiry-name">Full name</label><input id="enquiry-name" name="name" type="text" autocomplete="name" required>
                 <label for="enquiry-email">Email address</label><input id="enquiry-email" name="email" type="email" autocomplete="email" required>
                 <label for="enquiry-phone">Phone number</label><input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" required>
             </fieldset>
-            <fieldset><legend>Event details</legend>
+            <fieldset><legend>Your event</legend>
                 <label for="enquiry-event">Event type</label>
                 <select id="enquiry-event" name="event" required><option value="">Choose an event</option><option>Wedding</option><option>Birthday</option><option>Corporate Event</option><option>Baby Shower</option><option>Graduation</option></select>
                 <label for="enquiry-date">Preferred date</label><input id="enquiry-date" name="date" type="date" required>
                 <label for="enquiry-guests">Number of guests</label><input id="enquiry-guests" name="guests" type="number" min="1" max="5000" required>
-                <label for="enquiry-message">Requirements</label><textarea id="enquiry-message" name="message" rows="5" required></textarea>
+                <label for="enquiry-message">What do you have in mind?</label><textarea id="enquiry-message" name="message" rows="5" placeholder="Tell us about your venue, colours, theme or anything else you would like us to know." required></textarea>
             </fieldset>
-            <button type="submit">Send Event Enquiry</button>
+            <button type="submit">Send My Enquiry</button>
             <p id="enquiry-status" class="form-status" role="status" aria-live="polite"></p>
         </form>
     </section>

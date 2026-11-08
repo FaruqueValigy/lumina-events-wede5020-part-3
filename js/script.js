@@ -11,7 +11,7 @@
 
             if (!form.checkValidity()) {
                 form.reportValidity();
-                status.textContent = 'Please complete the required fields with valid details.';
+                status.textContent = 'Please check the highlighted fields and try again.';
                 status.classList.add('error');
                 return;
             }
@@ -20,13 +20,14 @@
                 const guests = Number(form.querySelector('[name="guests"]')?.value || 0);
                 const event = form.querySelector('[name="event"]')?.value || 'event';
                 const estimate = guests ? Math.max(2500, guests * 180) : 2500;
-                status.textContent = `Thank you. Your ${event.toLowerCase()} enquiry is ready. An indicative planning range starts at approximately R${estimate.toLocaleString('en-ZA')}.`;
+                status.textContent = `Thanks — your ${event.toLowerCase()} plans sound exciting. Packages for this size start from around R${estimate.toLocaleString('en-ZA')}. We will be in touch soon.`;
             } else if (form.id === 'contact-form') {
-                status.textContent = 'Your message is valid and ready to be sent to Lumina Events.';
+                status.textContent = 'Thanks — your message is ready. Your email app should open so you can send it to the Lumina Events team.';
             } else {
-                status.textContent = 'Thank you. Your enquiry is ready to be sent to Lumina Events.';
+                status.textContent = 'Thanks — your enquiry is ready. Your email app should open so you can send it to us.';
             }
             status.classList.add('success');
+            window.setTimeout(() => form.submit(), 250);
         });
     }
 
